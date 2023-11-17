@@ -29,6 +29,12 @@ else:
     quantidade = int(input('\nInforme a quantidade de créditos -> '))
     if(quantidade == 10 or quantidade == 20 or quantidade == 40 or quantidade == 60 or quantidade == 80 or quantidade == 100):
         print("O jogador(a) {} efetuou a compra de {} créditos!".format(nomeUsuario, quantidade))
+        op = str(input('\nPodemos começar o jogo? (s - n) ')).upper
+        if(op == 'S'):
+            jogadas = int(input('\nInforme a quantidade de jogadas -> '))
+           
+        else:
+            print("É uma pena que não queira jogar, nós veremos novamente na próxima vez!")
     else:
         print("O valor de {} créditos não consta na tabela ;(".format(quantidade))
     
