@@ -26,5 +26,10 @@ else:
     print(' 4º - O usuário deverá informar a quantidade de rodadas a serem executadas pelo sistemas!')
     print(' \033[1;37mSelecione a letra S|s para sair do programa ao final da última rodada\033[m')
     print(' \033[1;33mTABELA DE MONTYCARD: 10 créditos - 500 reais; 20 créditos - 550 reais; 40 créditos - 650 reais; 60 créditos - 850 reais; 80 créditos - 950 reais; 100 créditos - 10.000 reais\033[m')
-
+    quantidade = int(input('\nInforme a quantidade de créditos -> '))
+    if(quantidade == 10 or quantidade == 20 or quantidade == 40 or quantidade == 60 or quantidade == 80 or quantidade == 100):
+        print("O jogador(a) {} efetuou a compra de {} créditos!".format(nomeUsuario, quantidade))
+    else:
+        print("O valor de {} créditos não consta na tabela ;(".format(quantidade))
+    
 
